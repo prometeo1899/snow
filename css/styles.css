@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,400;1,400&family=Playfair+Display:ital@1&display=swap');
+body{
+    background-image: url(https://www.wallpapertip.com/wmimgs/39-393563_sunset-snowy-mountain-scene.jpg);
+    background-size: 100%;
+}
+
+.container{
+    display: flex;
+    align-items: center;
+    margin: auto;
+    gap: 5rem;
+    padding: 3rem;
+    font-family: 'Fira Sans', sans-serif;
+    color: white;
+}
+
+.section-a{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 26.5rem;
+    margin-left: 15rem;
+    margin-top: 8rem;
+    padding: 0;
+}
+.section-a h1{
+    font-size: 70px;
+    margin-top: 0;
+}
+.section-a p {
+    margin-top: -2rem;
+}
+.redes{
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    width: 26rem;
+    align-self: center;
+}
+.redes img{
+    width: 2rem;
+}
+.redes img:hover{
+    opacity: 0.60;
+}
+.section-b{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 30rem;
+    margin-right: 8rem;
+    margin-top: 8rem;
+    gap: -1rem;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    width: 100%;
+}
+.input{
+    margin-top: 1rem;
+    width: 25rem;
+    height: 1.5rem;
+    border: none;
+    border-radius: 0.4rem;
+    outline: none;
+}
+.input:hover{
+    background-color: rgba(255, 255, 255, 0.534);
+}
+label input{
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+}
+label span{
+    font-weight: 200;
+}
+.imput-label{
+    display:flex;
+    flex-direction: row;
+    gap: 5px;
+    align-self: flex-start;
+    gap: 1rem;
+    padding: 2.3rem;
+    margin-top: -1.5rem;
+}
+.imput-label input[type="checkbox"] {
+    width: 15px;
+}
+.imput-label span{
+    font-weight: 400;
+}
+.btn{
+    background-color: rgb(240, 99, 38);
+    border: none;
+    height: 1.8rem;
+    border-radius: 0.5rem;
+    align-self: flex-start;
+    margin-top: -2rem;
+    margin-left: 2.6rem;
+    color: white;
+}
+.btn:hover{
+    opacity: 0.70;
+}
+
+span a{
+    text-decoration: none;
+    margin-left: -12rem;
+    color: white;
+}
+span a:hover{
+    color: rgba(255, 255, 255, 0.61);
+}
+.final span{
+    color: rgba(43, 43, 43, 0.89);
+}
+.final-poli{
+    display: flex;
+    color: rgba(43, 43, 43, 0.89);
+    align-items: center;
+    margin-top: -1.3rem;
+}
+.final-poli a{
+    color: rgba(43, 43, 43, 0.89);
+    text-decoration: none;
+}
+.final-poli a:hover {
+    color: rgba(0, 0, 0, 0.521);
+    text-decoration: none;
+}
