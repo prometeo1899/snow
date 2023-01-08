@@ -105,6 +105,7 @@ label span{
 }
 .btn:hover{
     opacity: 0.70;
+    cursor: pointer;
 }
 
 span a{
