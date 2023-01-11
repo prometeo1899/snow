@@ -133,3 +133,6 @@ span a:hover{
     color: rgba(0, 0, 0, 0.521);
     text-decoration: none;
 }
+.g-recaptcha{
+    transform: scale(0.74);
+    transform-origin: 0 0;}
