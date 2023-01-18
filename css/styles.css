@@ -1,27 +1,68 @@
 @import url('https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,400;1,400&family=Playfair+Display:ital@1&display=swap');
+
+
+*, *:before, *:after {
+    -webkit-box-sizing: inherit;
+    -moz-box-sizing: inherit;
+    box-sizing: inherit;
+  }
+  ::-webkit-input-placeholder {
+    color: #56585b;
+  }
+  ::-moz-placeholder {
+    color: #56585b;
+  }
+  
+  :-moz-placeholder {
+    color: #56585b;
+  }
+  html {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+
 body{
-    background-image: url(https://www.wallpapertip.com/wmimgs/39-393563_sunset-snowy-mountain-scene.jpg);
-    background-size: 100%;
+    background: url(https://descargarfondos.com/wp-content/uploads/Monta%C3%B1as-nevadas-atardecer.jpg)no-repeat center center fixed ;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    color: #0a0a0b;
+    overflow: hidden;
+    margin: 0;
+  
 }
 
 .container{
+    height: 100vh;
+    width: 100%;
+    display: -webkit-box;
     display: flex;
     align-items: center;
-    margin: auto;
-    gap: 5rem;
-    padding: 3rem;
+    justify-content: center;
+    position: absolute;
+    padding: 20px 50px;
     font-family: 'Fira Sans', sans-serif;
     color: white;
+    margin-top: -2em;
+    -webkit-box-direction: normal;
+    -webkit-box-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    gap: 10em;
+    
+
+
 }
 
 .section-a{
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 26.5rem;
-    margin-left: 15rem;
-    margin-top: 8rem;
+    width: 25em;
     padding: 0;
+    margin-top: 1em;
+
 }
 .section-a h1{
     font-size: 70px;
@@ -30,27 +71,48 @@ body{
 .section-a p {
     margin-top: -2rem;
 }
-.redes{
+.redes {
     display: flex;
     align-items: center;
     gap: 0.5rem;
-    width: 26rem;
+    width: 20rem;
     align-self: center;
+   
+}
+
+.redesb{
+    position: absolute;
+    width: 100%;
+    margin-top: 90vh;
+    display: flex;
+    justify-content: center;
+    opacity: 0;
+    gap: 1em;
+
+}
+
+.redesb img {
+     width: 2rem;
+     
 }
 .redes img{
     width: 2rem;
 }
 .redes img:hover{
     opacity: 0.60;
+    
 }
+.redesb img:hover{
+    opacity: 0.60;}
+
 .section-b{
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 30rem;
-    margin-right: 8rem;
-    margin-top: 8rem;
-    gap: -1rem;
+    width: 20em;
+  
+
+ 
 }
 form{
     display: flex;
@@ -61,7 +123,7 @@ form{
 }
 .input{
     margin-top: 1rem;
-    width: 25rem;
+    width: 20em;
     height: 1.5rem;
     border: none;
     border-radius: 0.4rem;
@@ -110,23 +172,27 @@ label span{
 
 span a{
     text-decoration: none;
-    margin-left: -12rem;
+   
     color: white;
 }
 span a:hover{
     color: rgba(255, 255, 255, 0.61);
 }
+.final{
+    margin-top: 4em;
+}
 .final span{
-    color: rgba(43, 43, 43, 0.89);
+    color: rgba(248, 242, 242, 0.89);
+
 }
 .final-poli{
     display: flex;
-    color: rgba(43, 43, 43, 0.89);
+    color: rgba(250, 244, 244, 0.89);
     align-items: center;
     margin-top: -1.3rem;
 }
 .final-poli a{
-    color: rgba(43, 43, 43, 0.89);
+    color: rgba(252, 249, 249, 0.89);
     text-decoration: none;
 }
 .final-poli a:hover {
@@ -134,5 +200,60 @@ span a:hover{
     text-decoration: none;
 }
 .g-recaptcha{
+    display: flex;
     transform: scale(0.74);
-    transform-origin: 0 0;}
+    transform-origin: 0 0;
+    margin-left: 4em;
+   
+
+}
+    
+
+
+    @media all and (max-width:800px){
+ body{
+    background-position: 100%;
+ 
+ }
+
+        
+.container{
+    height:120vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  bottom: 5vh;
+    gap: 3em;
+
+   
+
+}
+        .section-a {
+            height: 0;
+            align-self:center;
+           
+            
+           
+        }
+        .section-a h1{
+            font-size: 50px;
+        }
+        .section-a p{
+            font-size: 0px;
+        }
+
+        .section-b{
+        
+         
+            justify-self: center;
+          
+        }
+       .redes{
+       opacity: 0;
+        }
+
+        .redesb {
+            opacity: 1;
+        }
+
+    }
