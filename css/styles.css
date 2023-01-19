@@ -259,3 +259,8 @@ span a:hover{
         }
 
     }
+    @media all and (max-width:350px){
+        .section-a h1{
+      display: none;
+        }
+    }
